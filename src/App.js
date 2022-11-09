@@ -5,10 +5,10 @@ import TotalBar from "./components/Total_bar.js"
 
 function App() {
   return (
-    <div className="App">
-      <BalanceBar/>
-      <Chart/>
-      <TotalBar/>
+    <div className="App container">
+      <BalanceBar className="row"/>
+      <Chart className="row"/>
+      <TotalBar className="row"/>
     </div>
   );
 }
