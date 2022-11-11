@@ -4,11 +4,11 @@ import React from "react"
 const Balance_bar = () => {
     return (
         <div>
-            <div class="balance-title">
+            <div className="balance-title col">
 
-                <p class="">My balance</p>
+                <p className="">My balance</p>
             </div>
-            <div class="balance-amount">
+            <div className="balance-amount">
 
                 <p>$921.48</p>
             </div>

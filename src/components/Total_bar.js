@@ -2,15 +2,15 @@ import React from "react"
 
 const Total_bar = () => {
     return (
-        <div>
-            <div class="amount-title">
+        <div className='col'>
+            <div className="amount-title">
       <p>Total this month</p>
     </div>
-    <div class="total-amount">
+    <div className="total-amount">
       <h2>  $478.33</h2>
 
     </div>
-    <div class="increase">
+    <div className="increase">
       <p>+2.4%</p>
       <p>from last month</p>
 
