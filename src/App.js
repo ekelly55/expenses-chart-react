@@ -1,8 +1,12 @@
+import { useState } from "react";
+import {Routes, Route, Outlet} from "react-router-dom"
 import BalanceBar from "./components/Balance_bar.js"
 import TotalBar from "./components/Total_bar.js"
 import GraphSection from "./components/GraphSection.js";
 import Modal from "./components/Modal.js";
-import { useState } from "react";
+import Insights from "./pages/Insights.js";
+
+
 
 
 function App() {
@@ -20,6 +24,7 @@ const [openModal, setOpenModal] = useState(false)
         Show Modal
         </button>
       {openModal && <Modal closeModal={setOpenModal}/>}
+  
     </div>
     
     );
