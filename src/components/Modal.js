@@ -1,15 +1,19 @@
 import React from "react";
-import { render } from "react-dom"
+import { useState } from "react";
 
-export default class Modal extends React.Component {
-    render() {
-        if(!this.props.show){
-            return null;
-        }
-        return 
-        <div>
-            Hello Modal
+
+ const Modal = ({closeModal}) => {
+  
+    return (
+
+        <div className="modalBackground">
+            <div className="modalContainer">
+                <button onClick={()=> closeModal(false)}>x</button>
+            <p>You're spending is over budget this week!</p>
+            </div>
         </div>
+    )
 
     }
-}
+
+export default Modal

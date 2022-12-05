@@ -4,25 +4,22 @@ import GraphSection from "./components/GraphSection.js";
 import Modal from "./components/Modal.js";
 import { useState } from "react";
 
+
 function App() {
 
-const [state, setState] = useState({show: false});
-
-const showModal = e => {
-  this.setState({
-      show: true
-    });
-  };
+const [openModal, setOpenModal] = useState(false)
   
   return (
     <div className="App container p-2">
       <BalanceBar className="row"/>
       <GraphSection className="row"/>
       <TotalBar className="row"/>
-      <button onClick={e=> {
-        this.showModal();
-      }}>Show Modal</button>
-    <Modal show={this.state.show}/>
+      <button className="openModalBtn" onClick={() => {
+        setOpenModal(true);
+      }}>
+        Show Modal
+        </button>
+      {openModal && <Modal closeModal={setOpenModal}/>}
     </div>
     
     );
